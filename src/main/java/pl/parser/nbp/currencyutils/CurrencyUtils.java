@@ -35,7 +35,7 @@ public class CurrencyUtils {
     }
 
     public double evaluateStandardDeviation() {
-        double[] sellingCourseArray = sellingCourseList.stream().mapToDouble(Double::doubleValue).toArray(); //via method reference
+        double[] sellingCourseArray = sellingCourseList.stream().mapToDouble(Double::doubleValue).toArray();
         return new StandardDeviation(false).evaluate(sellingCourseArray);
     }
 }
